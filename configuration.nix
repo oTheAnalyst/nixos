@@ -64,8 +64,10 @@
     desktopManager.cinnamon.enable = true;
 
     # Configure keymap in X11
-    layout = "us";
-    xkbVariant = "";
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
   };
 
   # Enable CUPS to print documents
@@ -116,6 +118,9 @@
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOL_PATHS = "/home/pretender/.steam/root/compatibilitytools.d";
   };
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
