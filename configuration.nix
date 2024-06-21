@@ -10,6 +10,24 @@
       ./hardware-configuration.nix
     ];
 
+  hardware.opengl = {
+   enable = true;
+   driSupport = true;
+   driSupport32bit = true;
+  };
+services.xserver.videoDrivers = ["amdgpu"];
+
+
+# install and enable steam 
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  enviroment.systemPackages = with pkg; [
+    mangohud
+  ];
+
+programs.gamemode.enable = true;
+
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -93,6 +111,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    protonup
+    vesktop
     neovim 
     wget
     git
@@ -101,6 +121,13 @@
     protonmail-desktop
     bitwarden-desktop
   ];
+
+ # protonup variable
+  environment.sessionVariables = {
+  STEAM_EXTRA_COMPAT_TOOL_PATHS = 
+  "/home/pretender/.steam/root/compatibilitytools.d";
+	  };
+  }
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
