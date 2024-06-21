@@ -103,10 +103,13 @@
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     mangohud
+    vesktop
+    cool-retro-term
     protonup
     vesktop
     neovim 
     wget
+    btop
     git
     yazi
     qbittorrent
