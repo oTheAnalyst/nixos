@@ -125,6 +125,12 @@
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOL_PATHS = "/home/pretender/.steam/root/compatibilitytools.d";
   };
+  #fonts
+  fonts.packages = with pkgs; [
+    fira-code
+    fira-code-symbols
+   ];
+  
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
