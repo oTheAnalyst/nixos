@@ -104,6 +104,7 @@
   environment.systemPackages = with pkgs; [
     mangohud
     obsidian
+    ani-cli
     openrgb-with-all-plugins
     vesktop
     cool-retro-term
