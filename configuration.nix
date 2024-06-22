@@ -112,6 +112,8 @@
     neovim 
     wget
     btop
+    alacritty
+    teamspeak_client
     git
     yazi
     qbittorrent
