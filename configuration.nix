@@ -104,6 +104,10 @@
   environment.systemPackages = with pkgs; [
     mangohud
     obsidian
+    R
+    starship
+    lolcat
+    pfetch
     ani-cli
     openrgb-with-all-plugins
     vesktop
