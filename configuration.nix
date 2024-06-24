@@ -117,6 +117,8 @@
     neovim 
     wget
     btop
+    freetube
+    thunderbird
     alacritty
     teamspeak_client
     git
