@@ -115,8 +115,16 @@
     protonup
     vesktop
     neovim 
+    gnumake #depedency for r.nvim 
+    libgcc #depedency for r.nvim
+    gccgo #depedency for r.nvim
     wget
     btop
+    rPackages.reactable
+    rPackages.languageserver
+    xclip 
+    qpwgraph
+    pipewire
     freetube
     thunderbird
     alacritty
