@@ -87,6 +87,7 @@
     # jack.enable = true;
   };
 
+
   # Define a user account
   users.users.pretender = {
     isNormalUser = true;
@@ -100,16 +101,16 @@
   # Install Firefox
   programs.firefox.enable = true;
 
+
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     mangohud
     obsidian
-    R
+    obs-studio
     starship
     lolcat
     pfetch
     ani-cli
-    openrgb-with-all-plugins
     vesktop
     cool-retro-term
     protonup
@@ -120,11 +121,8 @@
     gccgo #depedency for r.nvim
     wget
     btop
-    rPackages.reactable
-    rPackages.languageserver
     xclip 
     qpwgraph
-    pipewire
     freetube
     thunderbird
     alacritty
@@ -146,6 +144,8 @@
     fira-code-symbols
    ];
   
+  #enable open RGB
+  services.hardware.openrgb.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
