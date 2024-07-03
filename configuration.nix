@@ -121,6 +121,9 @@
     gccgo #depedency for r.nvim
     wget
     btop
+    R
+    emacs
+    hyfetch
     xclip 
     qpwgraph
     freetube
