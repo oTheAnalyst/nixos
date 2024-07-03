@@ -121,6 +121,7 @@
     gccgo #depedency for r.nvim
     wget
     btop
+    nerdfonts
     R
     emacs
     hyfetch
