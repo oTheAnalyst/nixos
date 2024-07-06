@@ -2,14 +2,16 @@
 # your system. Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./main-user.nix
+      inputs.home-manager.nixosModules.default
     ];
-
+  #gpu configurations for gaming 
   hardware.opengl = {
     enable = true;
     driSupport = true;
@@ -25,6 +27,10 @@
   };
 
   programs.gamemode.enable = true;
+  #end of gpu configs
+
+  #nix flakes experimental features
+  nix.settings.experimental-features = [ "nix-command" "flakes"];
 
   # Bootloader
   boot.loader.systemd-boot.enable = true;
@@ -101,7 +107,13 @@
   # Install Firefox
   programs.firefox.enable = true;
 
-
+   home-manager = {
+     extraSpecialArg = {inherit inputs; };
+     users = {
+         "pretender" = import ./home.nix;
+     };
+   };
+        
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     mangohud
