@@ -31,6 +31,11 @@
 
   #nix flakes experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes"];
+  
+
+  #hyprland 
+  programs.hyprland.enable = true;
+  programs.hyprland.package = inputs.hyprland.packages "${pkgs.system}".hyprland;
 
   # Bootloader
   boot.loader.systemd-boot.enable = true;
