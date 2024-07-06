@@ -5,17 +5,11 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./main-user.nix
-      inputs.home-manager.nixosModules.default
-    ];
   #gpu configurations for gaming 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
+   #driSupport = true;
+    enable32Bit = true;
   };
   
   services.xserver.videoDrivers = ["amdgpu"];
@@ -32,10 +26,6 @@
   #nix flakes experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes"];
   
-
-  #hyprland 
-  programs.hyprland.enable = true;
-  programs.hyprland.package = inputs.hyprland.packages "${pkgs.system}".hyprland;
 
   # Bootloader
   boot.loader.systemd-boot.enable = true;
@@ -112,12 +102,12 @@
   # Install Firefox
   programs.firefox.enable = true;
 
-   home-manager = {
-     extraSpecialArg = {inherit inputs; };
-     users = {
-         "pretender" = import ./home.nix;
-     };
-   };
+ #  home-manager = {
+ #    extraSpecialArg = {inherit inputs; };
+ #    users = {
+ #        "pretender" = import ./home.nix;
+ #    };
+ #  };
         
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
