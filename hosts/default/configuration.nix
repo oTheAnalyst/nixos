@@ -128,6 +128,7 @@
     gccgo #depedency for r.nvim
     wget
     btop
+    sqlite
     nerdfonts
     R
     emacs
