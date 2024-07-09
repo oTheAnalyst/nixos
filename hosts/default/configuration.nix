@@ -128,6 +128,8 @@
     gccgo #depedency for r.nvim
     wget
     btop
+    signal-desktop
+    mangareader
     sqlite
     nerdfonts
     R
