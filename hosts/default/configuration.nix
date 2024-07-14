@@ -23,6 +23,12 @@
   programs.gamemode.enable = true;
   #end of gpu configs
 
+#hyprland install 
+programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+};
+
   #nix flakes experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes"];
   
@@ -61,8 +67,8 @@
     enable = true;
 
     # Enable the Cinnamon Desktop Environment
-    displayManager.lightdm.enable = true;
-    desktopManager.cinnamon.enable = true;
+    displayManager.sddm.enable = true;
+    desktopManager.plasma6.enable = true;
 
     # Configure keymap in X11
     xkb = {
@@ -128,6 +134,7 @@
     gccgo #depedency for r.nvim
     wget
     btop
+    kitty
     signal-desktop
     mangareader
     sqlite
@@ -142,10 +149,15 @@
     alacritty
     teamspeak_client
     git
+    input-remapper
     yazi
     qbittorrent
     protonmail-desktop
     bitwarden-desktop
+    rofi # hyprland
+    waybar # hyprland plugin
+    swww # hyprland plugin
+    mako #hyprland plugin
   ];
 
   # Environment session variables
