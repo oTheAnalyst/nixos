@@ -150,6 +150,7 @@ programs.hyprland = {
     teamspeak_client
     git
     input-remapper
+    home-manager
     yazi
     qbittorrent
     protonmail-desktop
