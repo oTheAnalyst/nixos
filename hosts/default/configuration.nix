@@ -4,32 +4,6 @@
 
 { config, pkgs, inputs, ... }:
 
-import = [
-
-#programs
-../../home/programs/btop/
-../../home/programs/cava/
-../../home/programs/kitty/
-../../home/programs/spicetify/
-../../home/programs/fetch/
-../../home/programs/lf/
-../../home/programs/qutebrowser/
-
-# scripts
-../../home/scripts
-
-#system
-../../home/system/hyprland
-../../home/system/wofi
-../../home/system/waybar
-../../home/system/wlogout
-../../home/system/mime
-../../home/system/udiskie
-../../home/system/dunst
-../../home/system/gtk
-]
-
-
 {
   #gpu configurations for gaming 
   hardware.graphics = {
@@ -91,9 +65,9 @@ programs.hyprland = {
   # Enable the X11 windowing system
   services.xserver = {
     enable = true;
-
-    # Enable the Cinnamon Desktop Environment
+    # Enable the displayManager
     displayManager.sddm.enable = true;
+    # Enable the Desktop Environment
     desktopManager.plasma6.enable = true;
 
     # Configure keymap in X11
@@ -187,13 +161,6 @@ programs.hyprland = {
     swww # hyprland plugin
     mako #hyprland plugin
   ];
-
-# imports wallpapers
-file."wallpapers" = {
-    recursive = true;
-    source = ../../home/wallpapers;
-  };
-
 
   # Environment session variables
   environment.sessionVariables = {
