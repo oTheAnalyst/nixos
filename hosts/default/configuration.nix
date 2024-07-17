@@ -62,6 +62,10 @@ programs.hyprland = {
     };
   };
 
+ #bluetooth enable
+ hardware.bluetooth.enable = true;
+ hardware.bluetooth.powerOnBoot = true;
+
   # Enable the X11 windowing system
   services.xserver = {
     enable = true;
@@ -134,8 +138,10 @@ programs.hyprland = {
     gccgo #depedency for r.nvim
     wget
     btop
+    wine
+    piper
+    libratbag
     kitty
-    blueman
     signal-desktop
     mangareader
     sqlite
@@ -154,6 +160,7 @@ programs.hyprland = {
     home-manager
     yazi
     qbittorrent
+    blueman
     protonmail-desktop
     bitwarden-desktop
     rofi # hyprland
