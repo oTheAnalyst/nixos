@@ -140,6 +140,7 @@ programs.hyprland = {
     btop
     wine
     piper
+    zoom
     libratbag
     kitty
     signal-desktop
