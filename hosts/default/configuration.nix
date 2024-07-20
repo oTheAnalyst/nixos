@@ -121,50 +121,54 @@ programs.hyprland = {
         
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
-    mangohud
-    obsidian
-    obs-studio
-    starship
-    lolcat
-    pfetch
-    ani-cli
-    vesktop
-    cool-retro-term
-    protonup
-    vesktop
-    neovim 
-    gnumake #depedency for r.nvim 
-    libgcc #depedency for r.nvim
-    gccgo #depedency for r.nvim
+# utlitly
     wget
     btop
     wine
     piper
-    zoom
+    blueman
+    git
+    mangohud
     libratbag
+    nerdfonts
+    R
+# rice
+    starship
+    lolcat
+    pfetch
+    hyfetch
+    ani-cli
+    vesktop
+    cool-retro-term
+    protonup
+    neovim 
+    gnumake #depedency for r.nvim 
+    libgcc #depedency for r.nvim
+    gccgo #depedency for r.nvim
+#apps
+    obsidian
+    obs-studio
+    vesktop
+    zoom
+    zoom-us
     kitty
     signal-desktop
     mangareader
     sqlite
-    nerdfonts
-    R
     emacs
-    hyfetch
     xclip 
     qpwgraph
     freetube
     thunderbird
     alacritty
     teamspeak_client
-    git
     input-remapper
     home-manager
     yazi
     qbittorrent
-    blueman
-    protonmail-desktop
     bitwarden-desktop
-    rofi # hyprland
+# hyprland
+    rofi 
     waybar # hyprland plugin
     swww # hyprland plugin
     mako #hyprland plugin
