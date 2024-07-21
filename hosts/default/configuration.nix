@@ -39,7 +39,7 @@ programs.hyprland = {
 
   # Networking settings
   networking = {
-    hostName = "nixos"; # Define your hostname.
+    hostName = "faker"; # Define your hostname.
     networkmanager.enable = true; # Enable networking
   };
 

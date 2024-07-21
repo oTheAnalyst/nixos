@@ -36,6 +36,12 @@
     # '')
   ];
 
+  programs.git = {
+      enable = true;
+      userName = "VtheRtech";
+      userEmail = "sakeyisu@gmail.com"
+    }
+
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
@@ -68,7 +74,7 @@
   #  /etc/profiles/per-user/pretender/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+     EDITOR = "emacs";
   };
 
   # Let Home Manager install and manage itself.
