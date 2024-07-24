@@ -155,6 +155,7 @@ programs.hyprland = {
     signal-desktop
     mangareader
     sqlite
+    sqlitebrowser
     emacs
     xclip 
     qpwgraph
