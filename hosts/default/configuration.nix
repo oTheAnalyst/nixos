@@ -126,7 +126,6 @@ programs.hyprland = {
     btop
     wine
     piper
-    blueman
     git
     mangohud
     libratbag
