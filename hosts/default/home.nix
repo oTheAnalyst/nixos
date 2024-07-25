@@ -75,4 +75,12 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+
+  #enables git and setup the account I will be committing with
+  programs.git = {
+      enable = true;
+      userName = "VtheRtech";
+      userEmail = "sakeyisu@gmail.com";
+    };
+
 }
