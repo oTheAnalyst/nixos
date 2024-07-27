@@ -123,6 +123,7 @@ programs.hyprland = {
   environment.systemPackages = with pkgs; [
 # utlitly
     wget
+    tree
     btop
     wine
     piper
