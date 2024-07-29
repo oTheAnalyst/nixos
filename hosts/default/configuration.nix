@@ -1,6 +1,7 @@
 # Edit this configuration file to define what should be installed on
 # your system. Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
+# go to line 125 to add programs
 
 { config, pkgs, inputs, ... }:
 
@@ -152,7 +153,7 @@ programs.hyprland = {
     zoom
     zoom-us
     vlc
-    cinelerra
+    cinelerra #video editing app 
     kitty
     signal-desktop
     mangareader
