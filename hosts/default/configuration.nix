@@ -151,6 +151,8 @@ programs.hyprland = {
     vesktop
     zoom
     zoom-us
+    vlc
+    cinelerra
     kitty
     signal-desktop
     mangareader
