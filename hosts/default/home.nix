@@ -80,7 +80,7 @@
   programs.git = {
       enable = true;
       userName = "VtheRtech";
-      userEmail = "michaelvcumbo21@proton.me";
+      userEmail = "sakeyisu@gmail.com";
     };
 
 }

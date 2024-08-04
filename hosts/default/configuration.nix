@@ -169,6 +169,7 @@ programs.hyprland = {
     input-remapper
     home-manager
     yazi
+    ranger
     qbittorrent
     bitwarden-desktop
 # hyprland
