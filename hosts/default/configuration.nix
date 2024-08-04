@@ -172,6 +172,7 @@ programs.hyprland = {
     ranger
     qbittorrent
     bitwarden-desktop
+    github-desktop
 # hyprland
     rofi 
     waybar # hyprland plugin
