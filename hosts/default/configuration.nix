@@ -77,14 +77,13 @@ programs.hyprland = {
         theme = "breeze";
         settings = {
           General = {
-        DisplayCommand="/run/current-system/sw/bin/sleep 4";
-            Background = "/home/pretender/Pictures/thetree.png";
+        DisplayCommand="/run/current-system/sw/bin/sleep 10";
+        Background = "~/Pictures/thetree.png";
+            };
           };
         };
-      };
     # Enable the Desktop Environment
     desktopManager.plasma6.enable = true;
-
     # Configure keymap in X11
     xkb = {
       layout = "us";
