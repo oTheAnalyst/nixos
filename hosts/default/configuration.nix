@@ -71,7 +71,17 @@ programs.hyprland = {
   services.xserver = {
     enable = true;
     # Enable the displayManager
-    displayManager.sddm.enable = true;
+    displayManager.sddm = {
+        enable = true;
+        wayland.enable = true;
+        theme = "breeze";
+        settings = {
+          General = {
+        DisplayCommand="/run/current-system/sw/bin/sleep 4";
+            Background = "/home/pretender/Pictures/thetree.png";
+          };
+        };
+      };
     # Enable the Desktop Environment
     desktopManager.plasma6.enable = true;
 
