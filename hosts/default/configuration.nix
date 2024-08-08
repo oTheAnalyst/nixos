@@ -77,7 +77,7 @@ programs.hyprland = {
         theme = "breeze";
         settings = {
           General = {
-        DisplayCommand="/run/current-system/sw/bin/sleep 10";
+        DisplayCommand="/run/current-system/sw/bin/sleep 14";
         Background = "~/Pictures/thetree.png";
             };
           };
@@ -133,6 +133,8 @@ programs.hyprland = {
   environment.systemPackages = with pkgs; [
 # utlitly
     wget
+    system-config-printer
+    hplip
     tree
     btop
     wine
@@ -141,7 +143,12 @@ programs.hyprland = {
     mangohud
     libratbag
     nerdfonts
+    gnumake #depedency for r.nvim 
+    libgcc #depedency for r.nvim
+    gccgo #depedency for r.nvim
     R
+    neovim
+    emacs
 # rice
     starship
     lolcat
@@ -151,10 +158,6 @@ programs.hyprland = {
     vesktop
     cool-retro-term
     protonup
-    neovim 
-    gnumake #depedency for r.nvim 
-    libgcc #depedency for r.nvim
-    gccgo #depedency for r.nvim
 #apps
     obsidian
     obs-studio
@@ -168,8 +171,7 @@ programs.hyprland = {
     mangareader
     sqlite
     sqlitebrowser
-    emacs
-    xclip 
+    xclip
     qpwgraph
     freetube
     thunderbird
