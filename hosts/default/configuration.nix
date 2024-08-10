@@ -77,7 +77,7 @@ programs.hyprland = {
         theme = "breeze";
         settings = {
           General = {
-        DisplayCommand="/run/current-system/sw/bin/sleep 14";
+        DisplayCommand="/run/current-system/sw/bin/sleep 30";
         Background = "~/Pictures/thetree.png";
             };
           };
