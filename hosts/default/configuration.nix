@@ -204,6 +204,9 @@ programs.hyprland = {
   #enable open RGB
   services.hardware.openrgb.enable = true;
 
+  # depedency for piper
+  services.ratbagd.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
