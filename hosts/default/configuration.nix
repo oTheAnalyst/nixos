@@ -151,6 +151,7 @@ programs.hyprland = {
     emacs
 # rice
     starship
+    cava
     lolcat
     pfetch
     hyfetch
