@@ -10,6 +10,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
     yazi = {
       url = "github:sxyazi/yazi";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,6 +19,8 @@
       url = "github:Vencord/Vesktop";
       inputs.nixpkgs.follows = "nixpkgs";
       };
+=======
+>>>>>>> parent of 17aa700 (added in yazi to flake, this is properly added)
 =======
 >>>>>>> parent of 17aa700 (added in yazi to flake, this is properly added)
   };
