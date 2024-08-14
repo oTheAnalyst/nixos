@@ -30,6 +30,11 @@ programs.hyprland = {
     xwayland.enable = true;
 };
 
+#imports
+{
+    import = [../../modules/yazi/default.nix];
+  };
+
   #nix flakes experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes"];
   
