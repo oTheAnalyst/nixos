@@ -30,11 +30,6 @@ programs.hyprland = {
     xwayland.enable = true;
 };
 
-#imports
-{
-    import = [../../modules/yazi/default.nix];
-  };
-
   #nix flakes experimental features
   nix.settings.experimental-features = [ "nix-command" "flakes"];
   
@@ -165,6 +160,7 @@ programs.hyprland = {
     cool-retro-term
     protonup
 #apps
+    discord
     obsidian
     obs-studio
     vesktop
