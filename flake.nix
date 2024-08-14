@@ -13,12 +13,15 @@
       url = "github:sxyazi/yazi";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    Vesktop = {
+      url = "github:Vencord/Vesktop"
+      inputs.nixpkgs.follows = "nixpkgs"
+      };
   };
 
   outputs = inputs @ {
     nixpkgs,
     home-manager,
-    yazi,
     ...
   }: {
     nixosConfigurations = {
