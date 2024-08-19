@@ -164,6 +164,7 @@ programs.hyprland = {
     cool-retro-term
     protonup
 #apps
+    rstudio
     discord
     obsidian
     obs-studio
