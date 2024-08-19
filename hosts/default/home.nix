@@ -75,6 +75,12 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+dconf.settings = {
+  "org/virt-manager/virt-manager/connections" = {
+    autoconnect = ["qemu:///system"];
+    uris = ["qemu:///system"];
+  };
+};
 
   #enables git and setup the account I will be committing with
   programs.git = {
