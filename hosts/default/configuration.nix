@@ -45,7 +45,9 @@ programs.hyprland = {
   };
 
   # Virtualization
-  virtualization.vmware.host.enable = true;
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
 
   # Set your time zone
   time.timeZone = "America/New_York";
