@@ -44,6 +44,9 @@ programs.hyprland = {
     networkmanager.enable = true; # Enable networking
   };
 
+  # Virtualization
+  virtualization.vmware.host.enable = true;
+
   # Set your time zone
   time.timeZone = "America/New_York";
 
@@ -156,7 +159,6 @@ programs.hyprland = {
     pfetch
     hyfetch
     ani-cli
-    vesktop
     cool-retro-term
     protonup
 #apps
