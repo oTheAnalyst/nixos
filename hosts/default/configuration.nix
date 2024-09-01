@@ -138,6 +138,7 @@ programs.hyprland = {
   environment.systemPackages = with pkgs; [
 # utlitly
     wget
+    nix-linter
     system-config-printer
     hplip
     tree
