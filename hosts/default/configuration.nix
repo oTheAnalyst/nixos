@@ -139,6 +139,7 @@ programs.hyprland = {
 # utlitly
     wget
     system-config-printer
+    nix-prefetch-git
     hplip
     tree
     btop
