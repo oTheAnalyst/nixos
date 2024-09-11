@@ -166,6 +166,7 @@ programs.hyprland = {
     cool-retro-term
     protonup
 #apps
+    veracrypt
     rstudio
     discord
     obsidian
