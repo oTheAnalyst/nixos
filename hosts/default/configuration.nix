@@ -166,6 +166,8 @@ programs.hyprland = {
     cool-retro-term
     protonup
 #apps
+    catt
+    gallery-dl
     veracrypt
     rstudio
     discord
