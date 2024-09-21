@@ -137,6 +137,7 @@ programs.hyprland = {
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
 # utlitly
+    dmidecode
     wget
     system-config-printer
     nix-prefetch-git
