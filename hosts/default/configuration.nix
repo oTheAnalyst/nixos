@@ -138,6 +138,7 @@ programs.hyprland = {
   environment.systemPackages = with pkgs; [
 # utlitly
     dmidecode
+    gpart
     wget
     system-config-printer
     nix-prefetch-git
