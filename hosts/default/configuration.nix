@@ -5,7 +5,9 @@
 
 { config, pkgs, inputs, ... }:
 
-{
+let
+  btop-rocm = pkgs.btop.override { rocmSupport = true; };
+in {
   #gpu configurations for gaming 
   hardware.graphics = {
     enable = true;
@@ -133,12 +135,14 @@ programs.hyprland = {
  #        "pretender" = import ./home.nix;
  #    };
  #  };
-        
+
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
 # utlitly
     dmidecode
     gpart
+    gparted
+    rocmPackages.rocm-smi
     wget
     system-config-printer
     nix-prefetch-git

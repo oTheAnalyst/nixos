@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, ... }:{
 
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -82,11 +82,10 @@ dconf.settings = {
   };
 };
 
-  #enables git and setup the account I will be committing with
-  programs.git = {
-      enable = true;
-      userName = "VtheRtech";
-      userEmail = "sakeyisu@gmail.com";
-    };
+programs.git = {
+    enable = true;
+    userName = "VtheRtech";
+    userEmail = "sakeyisu@gmail.com";
+  };
 
 }
